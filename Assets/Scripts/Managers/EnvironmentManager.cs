@@ -21,16 +21,16 @@ public class EnvironmentManager : MonoBehaviour
     }
 
     #region methods
-    
-    public void ChangePollution(float deltaPollution)
+
+    /// <summary>
+    /// Updates the environment by changing the pollution and natural resources levels.
+    /// </summary>
+    /// <param name="deltaPollution">The change in pollution level. The default value is 0.</param>
+    /// <param name="deltaNaturalResources">The change in natural resources level. The default value is 0.</param>
+    public void UpdateEnvironment(float deltaPollution = 0f, float deltaNaturalResources = 0f)
     {
         EnvironmentData.ChangePollution(deltaPollution);
-    }
-    
-    public void ChangeNaturalResources(float deltaNaturalResources)
-    {
         EnvironmentData.ChangeNaturalResources(deltaNaturalResources);
     }
-
     #endregion
 }

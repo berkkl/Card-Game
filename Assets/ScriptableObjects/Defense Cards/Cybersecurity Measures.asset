@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2a5ea2ae5a362143b03184438a86ff3, type: 3}
+  m_Name: Cybersecurity Measures
+  m_EditorClassIdentifier: 
+  cardName: Cybersecurity Measures
+  description: Increase Security by 15, decrease Research by 5.
+  cardType: 5
+  deltaMilitary: 0
+  deltaSecurity: 15
+  deltaIntelligence: 0
+  deltaInternationalRelations: 0
+  deltaMoney: 0
+  deltaInflation: 0
+  deltaProduction: 0
+  deltaPollution: 0
+  deltaNaturalResources: 0
+  deltaPoliticalPower: 0
+  deltaEducationLevel: 0
+  deltaInfrastructure: 0
+  deltaResearch: -5
+  deltaPopulation: 0
+  deltaHappiness: 0
+  deltaHealthcare: 0

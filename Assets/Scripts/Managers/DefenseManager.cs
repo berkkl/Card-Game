@@ -22,20 +22,17 @@ public class DefenseManager : MonoBehaviour
 
     #region methods
 
-    public void ChangeMilitary(float deltaMilitary)
+    /// <summary>
+    /// Updates the defense values for the current entity.
+    /// </summary>
+    /// <param name="deltaMilitary">The change in military defense value.</param>
+    /// <param name="deltaSecurity">The change in security defense value.</param>
+    /// <param name="deltaIntelligence">The change in intelligence defense value.</param>
+    public void UpdateDefense(float deltaMilitary = 0f, float deltaSecurity = 0f, float deltaIntelligence = 0f)
     {
         DefenseData.ChangeMilitary(deltaMilitary);
-    }
-    
-    public void ChangeSecurity(float deltaSecurity)
-    {
         DefenseData.ChangeSecurity(deltaSecurity);
-    }
-    
-    public void ChangeIntelligence(float deltaIntelligence)
-    {
         DefenseData.ChangeIntelligence(deltaIntelligence);
     }
-
     #endregion
 }

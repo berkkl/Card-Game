@@ -5,33 +5,33 @@ using UnityEngine;
 public class InfrastructureData : MonoBehaviour
 {
     public float Infrastructure { get; private set; }
-    public float Education { get; private set; }
     public float Research { get; private set; }
 
     public InfrastructureData()
     {
         this.Infrastructure = 0;
-        this.Education = 0;
         this.Research = 0;
     }
 
-    public InfrastructureData(float infrastructure, float education, float research)
+    public InfrastructureData(float infrastructure, float research)
     {
         this.Infrastructure = infrastructure;
-        this.Education = education;
         this.Research = research;
     }
-    
+    /// <summary>
+    /// Represents the quality and extent of the physical structures serving a country.
+    /// This can include transportation systems, telecommunications, power plants,
+    /// and public utilities.
+    /// </summary>
     public void ChangeInfrastructure(float deltaInfrastructure)
     {
         this.Infrastructure += deltaInfrastructure;
     }
-
-    public void ChangeEducation(float deltaEducation)
-    {
-        this.Education += deltaEducation;
-    }
-
+    /// <summary>
+    /// Represents the capacity and productivity of a country's scientific and technological
+    /// research entities. This can take into account the amount of published research,
+    /// the reputation of research institutions, and investment in R&D.
+    /// </summary>
     public void ChangeResearch(float deltaResearch)
     {
         this.Research += deltaResearch;

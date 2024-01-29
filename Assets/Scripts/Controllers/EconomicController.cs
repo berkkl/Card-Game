@@ -10,7 +10,7 @@ public class EconomicController : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.E))
 		{
 			// Example of player triggering economic update
-			EconomyManager.Instance.UpdateMoney(100);
+			EconomyManager.Instance.UpdateEconomy(100);
 		}
 	}
 }

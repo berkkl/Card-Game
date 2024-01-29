@@ -21,21 +21,19 @@ public class PopulationManager : MonoBehaviour
     }
 
     #region methods
-    
-    public void ChangePopulation(float deltaPopulation)
-    {
-        this.PopulationData.ChangePopulation(deltaPopulation);
-    }
-    
-    public void ChangeHappiness(float deltaHappiness)
-    {
-        this.PopulationData.ChangeHappiness(deltaHappiness);
-    }
-    
-    public void ChangeHealthcare(float deltaHealthcare)
-    {
-        this.PopulationData.ChangeHealthcare(deltaHealthcare);
-    }
 
+    /// <summary>
+    /// Updates the population with the changes in population, happiness, and healthcare.
+    /// </summary>
+    /// <param name="deltaPopulation">The change in population.</param>
+    /// <param name="deltaHappiness">The change in happiness.</param>
+    /// <param name="deltaHealthcare">The change in healthcare.</param>
+    public void UpdatePopulation(float deltaPopulation = 0f, float deltaHappiness = 0f, float deltaHealthcare = 0f)
+    {
+        PopulationData.ChangePopulation(deltaPopulation);
+        PopulationData.ChangeHappiness(deltaHappiness);
+        PopulationData.ChangeHealthcare(deltaHealthcare);
+    }
+    
     #endregion
 }

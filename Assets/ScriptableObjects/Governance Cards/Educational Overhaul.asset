@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2a5ea2ae5a362143b03184438a86ff3, type: 3}
+  m_Name: Educational Overhaul
+  m_EditorClassIdentifier: 
+  cardName: Educational Overhaul
+  description: Decrease Money by 10000, increase Education Level by 15, increase
+    Research by 5, decrease Happiness by 5.
+  artwork: {fileID: 0}
+  cardType: 6
+  deltaMilitary: 0
+  deltaSecurity: 0
+  deltaIntelligence: 0
+  deltaInternationalRelations: 0
+  deltaMoney: -10000
+  deltaInflation: 0
+  deltaProduction: 0
+  deltaPollution: 0
+  deltaNaturalResources: 0
+  deltaPoliticalPower: 0
+  deltaEducationLevel: 15
+  deltaInfrastructure: 0
+  deltaResearch: 5
+  deltaPopulation: 0
+  deltaHappiness: -5
+  deltaHealthcare: 0

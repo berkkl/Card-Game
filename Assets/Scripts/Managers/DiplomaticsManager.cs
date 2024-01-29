@@ -20,10 +20,14 @@ public class DiplomaticsManager : MonoBehaviour
         }
     }
     #region methods
-    
-    public void ChangeInternationalRelations(float deltaMilitary)
+
+    /// <summary>
+    /// Updates the international relations by a given delta.
+    /// </summary>
+    /// <param name="deltaIR">The change in international relations. Default value is 0.</param>
+    public void UpdateDiplomacy(float deltaIR = 0f)
     {
-        DiplomaticsData.ChangeInternationalRelations(deltaMilitary);
+        DiplomaticsData.ChangeInternationalRelations(deltaIR);
     }
     #endregion
 }

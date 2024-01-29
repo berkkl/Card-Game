@@ -21,21 +21,16 @@ public class InfrastructureManager : MonoBehaviour
     }
 
     #region MyRegion
-    
-    public void ChangeInfrastructure(float deltaInfrastructure)
+
+    /// <summary>
+    /// Updates the infrastructure and research data.
+    /// </summary>
+    /// <param name="deltaInfrastructure">The amount of change to apply to the infrastructure data. Default value is 0.</param>
+    /// <param name="deltaResearch">The amount of change to apply to the research data. Default value is 0.</param>
+    public void UpdateInfrastructure(float deltaInfrastructure = 0f, float deltaResearch = 0f)
     {
-        this.InfrastructureData.ChangeInfrastructure(deltaInfrastructure);
+        InfrastructureData.ChangeInfrastructure(deltaInfrastructure);
+        InfrastructureData.ChangeResearch(deltaResearch);
     }
-    
-    public void ChangeEducation(float deltaEducation)
-    {
-        this.InfrastructureData.ChangeEducation(deltaEducation);
-    }
-    
-    public void ChangeResearch(float deltaResearch)
-    {
-        this.InfrastructureData.ChangeResearch(deltaResearch);
-    }
-    
     #endregion
 }
